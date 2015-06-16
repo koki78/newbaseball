@@ -14,8 +14,6 @@ class User < ActiveRecord::Base
   
   # 画像の処理　userテーブルに追加したカラムの名前をmount_uploaderに指定する。
 
-
-
   before_save { self.email = email.downcase }
   before_create :create_remember_token
   validates :name, presence: true, length: { maximum: 50 }

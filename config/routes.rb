@@ -21,6 +21,7 @@ Baseball::Application.routes.draw do
   match '/yami',  to: 'static_pages#yami',            via: 'get'
   match '/sato',  to: 'static_pages#sato',            via: 'get'
   match '/maji',  to: 'static_pages#maji',            via: 'get'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

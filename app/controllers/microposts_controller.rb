@@ -1,4 +1,5 @@
 class MicropostsController < ApplicationController
+  
   before_action :signed_in_user, only:[:create, :destroy]
   before_action :correct_user,  only: :destroy
 
@@ -23,7 +24,6 @@ class MicropostsController < ApplicationController
   end
 
   private
-
     def micropost_params
       params.require(:micropost).permit(:content,:category)
     end
