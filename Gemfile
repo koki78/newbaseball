@@ -11,7 +11,7 @@ gem 'bootstrap-will_paginate', '0.0.9'
 gem 'web-console'
 gem 'carrierwave'
 gem 'carrierwave'
-gem 'rmagick'
+gem 'rmagick', :require => 'RMagick'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
